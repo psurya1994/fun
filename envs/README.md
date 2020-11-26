@@ -1,6 +1,6 @@
 ## RL environments
 
-This folder consists of various RL environments that I built. All the environments here are compatible with 
+This folder consists of various RL environments that I built. All the environments here are compatible with other [agents](../agents_tabular) in the repository.
 
 ### List of environments:
 
@@ -16,4 +16,6 @@ This folder consists of various RL environments that I built. All the environmen
 
 * [LineWorld](lineworld.py): This is an linear chain world where the agent starts at the middle and it's goal is to reach the terminal state. Terminal state is the right most state. This can be used to perform sanity checks on algorithms like TabularSR (to do: add link to tabular SR).
 
-* [PixelGridWorld](gridworld_pixel.py) : Environment for image state space of the grid world. This can be used to do sanity checks for agents that work on high dimensional state spaces.
+* [PixelGridWorld](gridworld_pixel.py): Environment for image state space of the grid world. This can be used to do sanity checks for agents that work on high dimensional state spaces.
+
+* [TabularGridWorld](tabular_gridworld.py): Gridworld environment that I wrote from scratch. This is good because it has nice visualizations and more features. 
