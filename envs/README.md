@@ -1,6 +1,6 @@
 ## RL environments
 
-This folder consists of various RL environments that I built. All the environments here are compatible with other [agents](../agents_tabular) in the repository.
+This folder consists of various RL environments that I built. All the environments here are [OpenAI gym](https://gym.openai.com/) compatible and can be used with other [agents](../agents_tabular) in the repository.
 
 ### List of environments:
 
