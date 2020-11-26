@@ -1,18 +1,18 @@
-from deep_rl import *
+from deep_rl_old import *
 import matplotlib.pyplot as plt
 import torch
 from tqdm import trange, tqdm
 import random
 import numpy as np
 
-from deep_rl.network import *
-from deep_rl.component import *
-from deep_rl.utils import *
+from deep_rl_old.network import *
+from deep_rl_old.component import *
+from deep_rl_old.utils import *
 
 import sys
 sys.path.append('../')
 
-from deep_rl.component.fourrooms import FourRooms
+from deep_rl_old.component.fourrooms import FourRooms
 env = FourRooms(goal=9)
 
 ### FUNCTIONS FOR PLOTTING LOSS FUNCTIONS

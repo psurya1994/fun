@@ -45,9 +45,6 @@ class Owl(gym.Env):
             mask_loc = self.n - self.n / 2 * \
                         (1 + (error) * 2 / self.sight_range)
             eyes[int(mask_loc)] = 1
-#         if(error < np.pi/6):
-#             mask_loc = 60 - (30 + (prey_angle - self.view_angle) * 30 * 6 / np.pi)
-#             eyes[int(mask_loc)] = 1
 
         if(error < self.focus_range / 2):
             R = 0
@@ -103,16 +100,16 @@ class Owl(gym.Env):
         
     def preys(self):
         
-        self.prey_speed = 0.1
-        # self.prey_location = np.random.rand(2)-0.5
-        self.prey_location = np.array([1, 0])
+        self.prey_speed = 0.03
+        self.prey_location = np.random.rand(2)-0.5
+        # self.prey_location = np.array([1, 0])
         self.prey_location = self.prey_location / np.linalg.norm(self.prey_location)
         prey_angle = np.arctan2(self.prey_location[1],self.prey_location[0])
         self.prey_direction = prey_angle + np.pi + np.pi/2 * (np.random.rand() - 0.5)
         self.prey_dirn_vec = np.array([np.cos(self.prey_direction), np.sin(self.prey_direction)])
         self.prey_size = 0.1
     
-    def render(self, mode='human'):
+    def render(self, mode='png', name=''):
         fig, ax = plt.subplots(dpi=100)
         
         # plot boundary
@@ -140,7 +137,13 @@ class Owl(gym.Env):
         ax.plot([0,np.cos(left_angle)], [0, np.sin(left_angle)], 'k--')
         ax.plot([0,np.cos(right_angle)], [0, np.sin(right_angle)], 'k--')
         
-        plt.show()
+        if(mode=='human'):
+            plt.show()
+        elif(mode == 'png'):
+            filename = 'render'+name+'.png'
+            plt.title(name)
+            plt.savefig(filename)
+            plt.close()
         
 class OwlTabular(Owl):
     def __init__(self):
