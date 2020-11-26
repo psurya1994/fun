@@ -1,0 +1,1 @@
+Full idea: [link](https://docs.google.com/document/d/14nIszyfK4TS10ENABlQFCV7izzoouVUKP1eUZsVb7WE/edit?usp=sharing).

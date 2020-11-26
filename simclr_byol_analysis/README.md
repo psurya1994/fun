@@ -1,0 +1,1 @@
+The goal of this project is to visualize how the representation evolve over time when we train a toy dataset with SimCLR, BYOL and supervised learning. Comparing the evolution of representations might give us some insights into why these algorithms work so well.
