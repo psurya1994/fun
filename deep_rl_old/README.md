@@ -5,3 +5,5 @@ Things I added to the library:
 - avDSRAgent: To learn state representations using mixed policy successor features. 
 
 A more [recent version](/deep_rl) is also in this repo, with the same features, so use that to be safe.
+
+Note: `requirements.txt` does not include the installation of [openai baselines package](https://github.com/openai/baselines). You might have to install it seperately. 

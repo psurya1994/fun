@@ -27,6 +27,7 @@ class Config:
         self.exploration_steps = None
         self.log_level = 0
         self.history_length = None
+        self.hidden_nodes = None # Included by Surya
         self.double_q = False
         self.tag = 'vanilla'
         self.num_workers = 1
