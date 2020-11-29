@@ -1,1 +1,1 @@
-Full idea: [link](https://docs.google.com/document/d/14nIszyfK4TS10ENABlQFCV7izzoouVUKP1eUZsVb7WE/edit?usp=sharing).
+Full idea: [link](https://docs.google.com/document/d/14nIszyfK4TS10ENABlQFCV7izzoouVUKP1eUZsVb7WE/edit?usp=sharing). While people have published on similar ideas before, I came up with the idea independently. 
